@@ -19,6 +19,7 @@ MAX_CHARS = 200
 
 def main():
     line = LINE
+    # The judge scores exactly one roast line: anything else is invalid.
     if not line or "\n" in line or "\r" in line:
         print("error: entry must be a single non-empty line", file=sys.stderr)
         return 1
